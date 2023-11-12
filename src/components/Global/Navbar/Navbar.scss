@@ -1,0 +1,94 @@
+$tint-blue: #1c1e53;
+$white-color: #fff;
+
+#header-area {
+    background: $tint-blue;
+    padding: 16px 0;
+
+    .navbar-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        @media all and (max-width: 1024px) {
+            gap: 22px;
+        }
+    }
+
+    .logo {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+
+    .contact-btn {
+        margin-left: 16px;
+    }
+
+    nav {
+        @media all and (max-width: 991px) {
+            display: none;
+        }
+    }
+
+    .small-nav {
+        @media all and (min-width: 992px) {
+            display: none;
+        }
+    }
+}
+
+.offcanvas-backdrop {
+    @media all and (min-width: 991px) {
+        display: none !important;
+    }
+}
+.mobile-menu {
+    background-color: $tint-blue !important;
+    width: 300px !important;
+    @media all and (min-width: 991px) {
+        display: none !important;
+    }
+    @media all and (max-width: 575px) {
+        width: 70% !important;
+    }
+
+    .offcanvas-header {
+        color: $white-color;
+    }
+    ul {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+    }
+}
+
+.contact-btn {
+    border-radius: 41px;
+    border: 2px solid rgba(244, 246, 252, 0.2);
+    color: $white-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    padding: 15px 47px;
+    background-color: transparent;
+    margin: 0;
+
+    @media all and (max-width: 991px) {
+        margin-top: 20px;
+    }
+    @media all and (max-width: 575px) {
+        margin-top: 15px;
+        padding: 10px 30px;
+    }
+}
+.activeNav {
+    color: $white-color;
+}
