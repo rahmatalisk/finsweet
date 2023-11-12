@@ -1,0 +1,133 @@
+#view-pojects-area {
+    position: relative;
+    z-index: 10;
+    padding: 128px 0;
+    @media all and (max-width: 991px) {
+        padding: 88px 0;
+    }
+    @media all and (max-width: 575px) {
+        padding: 58px 0;
+    }
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    }
+
+    h1 {
+        color: #282938;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 64px;
+        margin: 0;
+        @media all and (max-width: 575px) {
+            font-size: 22px;
+            line-height: 24px;
+        }
+    }
+    a {
+        color: #282938;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        text-decoration: none;
+        @media all and (max-width: 575px) {
+            font-size: 14px;
+            gap: 5px;
+        }
+    }
+
+    .poject-box-group {
+        margin-top: 64px;
+        display: grid;
+        grid-template-columns: 65% 30%;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 32px;
+        @media all and (max-width: 575px) {
+            grid-template-columns: repeat(1, 1fr);
+            img {
+                width: 100% !important;
+            }
+        }
+        img {
+            border-radius: 10px;
+        }
+    }
+    .box1 {
+        grid-row: span 2;
+        @media all and (max-width: 575px) {
+            grid-row: span 1;
+        }
+    }
+
+    .box {
+        position: relative;
+    }
+
+    .text-content {
+        background: linear-gradient(329deg, #1c1e53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+        height: 0%;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        border-radius: 10px;
+        visibility: hidden;
+        transition: all 0.1s ease-in-out;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+
+        h6 {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            margin-top: auto;
+            @media all and (max-width: 575px) {
+                font-size: 22px;
+            }
+        }
+        p {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+        a {
+            color: #fcd980;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+    .box {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            .text-content {
+                height: 100%;
+                visibility: visible;
+            }
+        }
+    }
+    .box1 {
+        .text-content {
+            width: 50%;
+            border-radius: 10px 0 0 10px;
+        }
+    }
+    .box2,
+    .box3 {
+        .text-content {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
