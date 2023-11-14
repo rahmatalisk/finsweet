@@ -1,6 +1,9 @@
 import Navbar from "@/components/Global/Navbar/Navbar";
+import Features from "@/components/Home/Features/Features";
+import Frequently from "@/components/Home/Frequently/Frequently";
 import Hero from "@/components/Home/Hero/Hero";
 import HowWeWork from "@/components/Home/HowWeWork/HowWeWork";
+import OurBlog from "@/components/Home/OurBlog/OurBlog";
 import ViewPojects from "@/components/Home/ViewPojects/ViewPojects";
 import Head from "next/head";
 import Image from "next/image";
@@ -19,6 +22,9 @@ export default function Home() {
         <Hero />
         <HowWeWork />
         <ViewPojects />
+        <Features />
+        <OurBlog />
+        <Frequently />
       </main>
     </>
   );

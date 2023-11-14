@@ -27,7 +27,11 @@ export default function ViewPojects() {
             </Link>
           </div>
 
-          <div className="poject-box-group">
+          <div
+            className="poject-box-group"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div className="box box1">
               <Link href={"/"}>
                 {" "}
@@ -40,10 +44,7 @@ export default function ViewPojects() {
 
               <div className="text-content">
                 <h6>Workhub office Webflow Webflow Design</h6>
-                <p>
-                  Euismod faucibus turpis eu gravida mi. Pellentesque et velit
-                  aliquam{" "}
-                </p>
+
                 <Link href="/">
                   View project{" "}
                   <span>

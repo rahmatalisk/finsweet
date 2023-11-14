@@ -1,0 +1,97 @@
+#our-blog-area {
+    padding: 128px 0;
+    @media all and (max-width: 991px) {
+        padding: 88px 0;
+    }
+    @media all and (max-width: 575px) {
+        padding: 58px 0;
+    }
+    h1 {
+        color: var(--Dark-blue, #282938);
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 64px;
+        @media all and (max-width: 575px) {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    h4 {
+        color: var(--Dark-blue, #282938);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+        margin: 16px 0;
+        @media all and (max-width: 575px) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    p {
+        color: var(--Dark-blue, #282938);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 32px;
+        @media all and (max-width: 575px) {
+            font-size: 15.5px;
+            line-height: 22px;
+            margin-bottom: 20px;
+        }
+    }
+    .date {
+        color: var(--Dark-blue, #282938);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+    img {
+        margin-bottom: 40px;
+        @media all and (max-width: 575px) {
+            margin-bottom: 20px;
+        }
+    }
+    a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        color: #282938;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            span {
+                transition: all 0.3s ease-in-out;
+                padding-left: 10px;
+            }
+        }
+    }
+    .blogs-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px 25px;
+        margin-top: 64px;
+        @media all and (max-width: 1160px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media all and (max-width: 768px) {
+            margin-top: 34px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+            img {
+                transition: all 0.3s ease-in-out;
+                transform: scale(0.99);
+            }
+        }
+    }
+}

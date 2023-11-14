@@ -5,7 +5,11 @@ export default function HowWeWork() {
   return (
     <section id="how-we-work-area">
       <div className="container">
-        <div className="how-we-work-wrapper">
+        <div
+          className="how-we-work-wrapper"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="left-side">
             <h2>How we work</h2>
             <p>
