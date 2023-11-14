@@ -5,11 +5,7 @@ export default function HowWeWork() {
   return (
     <section id="how-we-work-area">
       <div className="container">
-        <div
-          className="how-we-work-wrapper"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
+        <div className="how-we-work-wrapper">
           <div className="left-side">
             <h2>How we work</h2>
             <p>
@@ -36,7 +32,7 @@ export default function HowWeWork() {
           </div>
           <div className="right-side">
             <div className="box-group">
-              <div className="box">
+              <div className="box" data-aos="fade-up" data-aos-duration="1000">
                 <div className="number-box">
                   <span>01</span>
                 </div>
@@ -46,7 +42,7 @@ export default function HowWeWork() {
                   aliquam .
                 </p>
               </div>
-              <div className="box">
+              <div className="box" data-aos="fade-up" data-aos-duration="1000">
                 <div className="number-box">
                   <span>02</span>
                 </div>
@@ -56,7 +52,7 @@ export default function HowWeWork() {
                   aliquam .
                 </p>
               </div>
-              <div className="box">
+              <div className="box" data-aos="fade-up" data-aos-duration="1000">
                 <div className="number-box">
                   <span>03</span>
                 </div>
@@ -66,7 +62,7 @@ export default function HowWeWork() {
                   aliquam .
                 </p>
               </div>
-              <div className="box">
+              <div className="box" data-aos="fade-up" data-aos-duration="1000">
                 <div className="number-box">
                   <span>04</span>
                 </div>

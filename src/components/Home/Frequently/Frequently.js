@@ -31,7 +31,12 @@ export default function Frequently() {
           <div className="right-side">
             <Accordion defaultActiveKey={0}>
               {questions.map((item, i) => (
-                <Accordion.Item eventKey={i} key={i}>
+                <Accordion.Item
+                  eventKey={i}
+                  key={i}
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   <Accordion.Header>
                     <h6>
                       <span>0{i + 1}</span> {item.text}

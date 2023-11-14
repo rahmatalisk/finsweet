@@ -33,6 +33,7 @@ $Royal-Blue: #2405f2;
     .how-we-work-wrapper {
         display: flex;
         align-items: flex-start;
+        justify-content: space-between;
         @media all and (max-width: 1024px) {
             flex-direction: column;
             gap: 50px;

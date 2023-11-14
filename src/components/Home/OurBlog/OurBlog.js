@@ -21,13 +21,14 @@ export default function OurBlog() {
       <div className="container">
         <h1>Our blog</h1>
 
-        <div
-          className="blogs-wrapper"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
+        <div className="blogs-wrapper">
           {blogs.map((blog) => (
-            <div key={blog.id} className="blog">
+            <div
+              key={blog.id}
+              className="blog"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <img src={blog.img} alt="" className="img-fluid" />
               <span className="date">19 Jan 2022</span>
               <h4>

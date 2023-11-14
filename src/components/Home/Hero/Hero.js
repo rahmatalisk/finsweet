@@ -6,7 +6,11 @@ export default function Hero() {
     <section id="hero-area">
       <div className="container">
         <div className="hero-wrapper">
-          <div className="text-content">
+          <div
+            className="text-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <h1>
               Building stellar <br /> websites for early startups
             </h1>
@@ -36,7 +40,11 @@ export default function Hero() {
               </Link>
             </div>
           </div>
-          <div className="img-content">
+          <div
+            className="img-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <img src="assets/hero/img.svg" alt="" className="img-fluid" />
           </div>
         </div>
